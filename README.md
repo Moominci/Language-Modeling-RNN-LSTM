@@ -74,6 +74,7 @@ generating characters with our trained model.
 - Average loss plot the average loss values for training and validation comparing RNN and LSTM
 ### Model RNN 1 & LSTM 1
 <img src="./images/loss_plot.jpg" width="680" height="450" alt="Model 1 Average loss plot">
+
 - Analysis Model Performance
   - The RNN & LSTM model's training loss decreases steadily over the epochs, indicating that the model is learning from the training data.
   - The validation loss also decreases initially but The LSTM model's validation loss decreases more significantly and consistently compared to the RNN model, and it achieves lower validation loss values overall.
@@ -81,6 +82,7 @@ generating characters with our trained model.
 
 ### Model RNN 2 & LSTM 2
 <img src="./images/loss_plot_bina.jpg" width="680" height="450" alt="Model 2 Average loss plot">
+
 - Analysis Model Performance
   - Certainly, we can see that the attempt to improve the model performance (dropout, more layers) reduced the model learning loss.
   - We can see that it starts with a much lower loss than the previous experiment (Model 1), but it doesn't decrease well with epoch. This can lead to overfitting if you go past more epoch.
