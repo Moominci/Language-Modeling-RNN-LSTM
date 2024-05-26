@@ -73,7 +73,7 @@ generating characters with our trained model.
 ### Average loss plot
 - Average loss plot the average loss values for training and validation comparing RNN and LSTM
 ### Model RNN 1 & LSTM 1
-<img src="./images/loss_plot.jpg" width="680" height="450" alt="Model 1 Average loss plot">
+<img src="./images/loss_plot_new.jpg" width="680" height="450" alt="Model 1 Average loss plot">
 
 - Analysis Model Performance
   - The RNN & LSTM model's training loss decreases steadily over the epochs, indicating that the model is learning from the training data.
