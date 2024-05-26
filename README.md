@@ -131,5 +131,5 @@ Adjusting the temperature parameter 'T' yields different outcomes:
     - A high 'T' value can reduce the consistency of sentences, often leading to illogical or grammatically incorrect sentences.
     - A low 'T' value enhances sentence consistency, producing more natural text.
 
-#### Conclusion
+### Conclusion
 The temperature parameter 'T' greatly influences the quality of the generated text. A high 'T' value produces more creative and diverse text, while a low 'T' value generates more consistent and logical text. Therefore, users should choose an appropriate 'T' value based on the purpose of the generated text. Experimenting with different 'T' values is essential to find the optimal setting for achieving natural and satisfying results.
