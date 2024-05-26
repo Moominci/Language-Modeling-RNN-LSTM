@@ -112,7 +112,7 @@ The temperature parameter 'T' is used to control the uncertainty during the samp
     - **Decreased Randomness**: A low 'T' value sharpens the probability distribution, concentrating high probabilities on the most certain options. This increases the consistency of the generated text but reduces diversity.
     - **Example**: When 'T' is set to 0.5, the generated text is more grammatically correct and consistent but may appear somewhat monotonous.
     - **RNN Example**: BUCKINGHAM: What should not of the fair face the hands, he will not that say the senaten day were be a bear his words And cloubs, with him the state the matter to make the one me that thy lives
-    - **LSTM Example**: BUCKINGHAM: And, in good time, here by meine and the devil in thy peril, Her comfort of that world thing is merce that had eleven for you, lay of months
+    - **LSTM Example**: BUCKINGHAM: And, in good time, here by meine and the devil in thy peril, Her comfort of that world thing is merce that had eleven for you, lay of moon
 
 3. **Temperature = 1**
     - **Baseline**: When 'T' is 1, the softmax function uses the original logit outputs to calculate probabilities. This results in sampling that follows the default probability distribution.
