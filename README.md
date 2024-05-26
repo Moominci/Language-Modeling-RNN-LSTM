@@ -31,11 +31,11 @@ generating characters with our trained model.
 
 | Layer (type)    | Output Shape  | Param # |
 |-----------------|---------------|---------|
-| RNN-1           | [-1, 30, 256] | 33,280  |
-| Linear-2        | [-1, 100, 65] | 16,705  |
+| RNN-1           | [-1, 30, 128] | 25,344  |
+| Linear-2        | [-1, 100, 65] | 8,385   |
 
-**Total params:** 49,985  
-**Trainable params:** 49,985  
+**Total params:** 33,729  
+**Trainable params:** 33,729  
 **Non-trainable params:** 0  
 
 ### LSTM Model 1 Summary
@@ -53,12 +53,12 @@ generating characters with our trained model.
 
 | Layer (type)    | Output Shape  | Param # |
 |-----------------|---------------|---------|
-| LSTM-1          | [-1, 30, 256] | 263,168 |
-| Linear-2        | [-1, 100, 65] | 16,705  |
+| LSTM-1          | [-1, 30, 128] | 131,584 |
+| Linear-2        | [-1, 100, 65] | 8,385   |
 
-**Total params:** 279,873  
-**Trainable params:** 279,873  
-**Non-trainable params:** 0  
+**Total params:** 139,969  
+**Trainable params:** 139,969  
+**Non-trainable params:** 0 
 
 
 ## Experiments
