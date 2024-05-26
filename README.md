@@ -15,7 +15,6 @@ generating characters with our trained model.
 - The structural differences between the first RNN, LSTM model and the second RNN, LSTM model are as follows.
   - num_layers : 2 => 3
   - Add Dropout Layer(=0.5) to prevent overfitting
-  - Use bidirectional RNN/LSTM
     
 ### RNN Model 1 Summary
 
