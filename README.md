@@ -10,7 +10,8 @@ generating characters with our trained model.
 
 # Assignment Reports
 ## Model Architecture Overview
-
+- We used two vanilla RNN models and two LSTM models to compare model performance and conduct comparative experiments to see if applying performance enhancement techniques really worked.
+  
 ### RNN Model 1 Summary
 
 | Layer (type)    | Output Shape  | Param # |
