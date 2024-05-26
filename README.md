@@ -63,7 +63,7 @@ generating characters with our trained model.
 
 ## Experiments
 ### Hyperparameter
-- Epochs = 20
+- Epochs = 10
 - Batch size : 64
 - hidden_size = 128
 - Optimizer : AdamW
