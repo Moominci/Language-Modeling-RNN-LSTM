@@ -97,9 +97,10 @@ generating characters with our trained model.
 - Learning rate : 0.002
 - Criterion = Cross Entropy Loss
 
-### Performance Analysis Report
+
+### Average loss plot
+- Average loss plot the average loss values for training and validation comparing RNN and LSTM
+
+### Generation Performance Analysis Report
 - We need to provide at least 100 pieces of length of 5 different samples generated based on different seed characters.
 
-## Softmax Function
-- Softmax function with a temperature parameter T can be written as: 
-y_i = \frac{\exp(z_i / T)}{\sum{\exp(z_i / T)}}  
