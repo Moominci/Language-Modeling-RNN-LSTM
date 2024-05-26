@@ -81,7 +81,7 @@ generating characters with our trained model.
 
 
 ### Model RNN 2 & LSTM 2
-<img src="./images/loss_plot_bina.jpg" width="680" height="450" alt="Model 2 Average loss plot">
+<img src="./images/loss_plot_drop.jpg" width="680" height="450" alt="Model 2 Average loss plot">
 
 - Analysis Model Performance
   - Certainly, we can see that the attempt to improve the model performance (dropout, more layers) reduced the model learning loss.
