@@ -84,8 +84,9 @@ generating characters with our trained model.
 <img src="./images/loss_plot_drop.jpg" width="680" height="450" alt="Model 2 Average loss plot">
 
 - Analysis Model Performance
-  - Certainly, we can see that the attempt to improve the model performance (dropout, more layers) reduced the model learning loss.
-  - We can see that it starts with a much lower loss than the previous experiment (Model 1), but it doesn't decrease well with epoch. This can lead to overfitting if you go past more epoch.
+  - Certainly, we see that attempts to improve the model performance (dropout, more layers) have reduced the loss of model learning.
+  - We find that we start with a lower loss than in previous experiments (Model 1), and that we can obtain a lower loss.
+  - Train Loss and Valid Loss for each model show a pattern of trying to represent the same value.
 
 ### Generation Performance Analysis Report
 - We need to provide at least 100 pieces of length of 5 different samples generated based on different seed characters.
