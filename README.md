@@ -11,22 +11,43 @@ generating characters with our trained model.
 # Assignment Reports
 ## Model Architecture Overview
 
-RNN Model Summary:
-----------------------------------------------------------------
-        Layer (type)               Output Shape         Param #
-================================================================
-            RNN-1              [-1, 30, 128]           20,480
-            Linear-2           [-1, 100, 65]           8,385
-================================================================
-Total params: 28,865
-Trainable params: 28,865
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.00
-Forward/backward pass size (MB): 0.01
-Params size (MB): 0.11
-Estimated Total Size (MB): 0.12
-----------------------------------------------------------------
+### RNN Model Summary
+
+| Layer (type)    | Output Shape  | Param # |
+|-----------------|---------------|---------|
+| RNN-1           | [-1, 30, 128] | 20,480  |
+| Linear-2        | [-1, 100, 65] | 8,385   |
+
+**Total params:** 28,865  
+**Trainable params:** 28,865  
+**Non-trainable params:** 0  
+
+| Metric                        | Size (MB) |
+|-------------------------------|-----------|
+| Input size                    | 0.00      |
+| Forward/backward pass size    | 0.01      |
+| Params size                   | 0.11      |
+| **Estimated Total Size (MB)** | **0.12**  |
+
+
+### LSTM Model Summary
+
+| Layer (type)    | Output Shape  | Param # |
+|-----------------|---------------|---------|
+| LSTM-1          | [-1, 30, 128] | 99,840  |
+| Linear-2        | [-1, 100, 65] | 8,385   |
+
+**Total params:** 108,225  
+**Trainable params:** 108,225  
+**Non-trainable params:** 0  
+
+| Metric                        | Size (MB) |
+|-------------------------------|-----------|
+| Input size                    | 0.00      |
+| Forward/backward pass size    | 0.01      |
+| Params size                   | 0.41      |
+| **Estimated Total Size (MB)** | **0.43**  |
+
 
 
 
