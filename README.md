@@ -1,5 +1,5 @@
 # Language-Modeling
-Language-Modeling using RNN, LSTM models trained by "shakespeare_train.txt"
+Language-Modeling using RNN, LSTM models trained by Shakespeare Data.
 generating characters with our trained model.
 
 # Assignment submitted by MinSeok Yoon
