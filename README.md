@@ -9,3 +9,6 @@ generating characters with our trained model.
 #### [Data-Driven User Analysis Lab] (https://ddua.seoultech.ac.kr/index.do)
 
 
+## Softmax Function
+- Softmax function with a temperature parameter T can be written as: 
+y_i = \frac{\exp(z_i / T)}{\sum{\exp(z_i / T)}}  
