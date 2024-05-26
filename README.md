@@ -11,7 +11,7 @@ generating characters with our trained model.
 # Assignment Reports
 ## Model Architecture Overview
 
-### RNN Model Summary
+### RNN Model 1 Summary
 
 | Layer (type)    | Output Shape  | Param # |
 |-----------------|---------------|---------|
@@ -29,8 +29,26 @@ generating characters with our trained model.
 | Params size                   | 0.11      |
 | **Estimated Total Size (MB)** | **0.12**  |
 
+### RNN Model 2 Summary
 
-### LSTM Model Summary
+| Layer (type)    | Output Shape  | Param # |
+|-----------------|---------------|---------|
+| RNN-1           | [-1, 30, 256] | 33,280  |
+| Linear-2        | [-1, 100, 65] | 16,705  |
+
+**Total params:** 49,985  
+**Trainable params:** 49,985  
+**Non-trainable params:** 0  
+
+| Metric                        | Size (MB) |
+|-------------------------------|-----------|
+| Input size                    | 0.00      |
+| Forward/backward pass size    | 0.02      |
+| Params size                   | 0.19      |
+| **Estimated Total Size (MB)** | **0.21**  |
+
+
+### LSTM Model 1 Summary
 
 | Layer (type)    | Output Shape  | Param # |
 |-----------------|---------------|---------|
@@ -47,6 +65,24 @@ generating characters with our trained model.
 | Forward/backward pass size    | 0.01      |
 | Params size                   | 0.41      |
 | **Estimated Total Size (MB)** | **0.43**  |
+
+### LSTM Model 2 Summary
+
+| Layer (type)    | Output Shape  | Param # |
+|-----------------|---------------|---------|
+| LSTM-1          | [-1, 30, 256] | 263,168 |
+| Linear-2        | [-1, 100, 65] | 16,705  |
+
+**Total params:** 279,873  
+**Trainable params:** 279,873  
+**Non-trainable params:** 0  
+
+| Metric                        | Size (MB) |
+|-------------------------------|-----------|
+| Input size                    | 0.00      |
+| Forward/backward pass size    | 0.02      |
+| Params size                   | 1.07      |
+| **Estimated Total Size (MB)** | **1.09**  |
 
 
 
