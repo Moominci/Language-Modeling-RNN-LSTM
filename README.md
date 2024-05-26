@@ -82,8 +82,8 @@ generating characters with our trained model.
 ### Model RNN 2 & LSTM 2
 <img src="./images/loss_plot_bina.jpg" width="680" height="450" alt="Model 2 Average loss plot">
 - Analysis Model Performance
-  - It is similar to the experimental results of Model 1.
   - Certainly, we can see that the attempt to improve the model performance (dropout, more layers) reduced the model learning loss.
+  - We can see that it starts with a much lower loss than the previous experiment (Model 1), but it doesn't decrease well with epoch. This can lead to overfitting if you go past more epoch.
 
 ### Generation Performance Analysis Report
 - We need to provide at least 100 pieces of length of 5 different samples generated based on different seed characters.
