@@ -27,13 +27,6 @@ generating characters with our trained model.
 **Trainable params:** 28,865  
 **Non-trainable params:** 0  
 
-| Metric                        | Size (MB) |
-|-------------------------------|-----------|
-| Input size                    | 0.00      |
-| Forward/backward pass size    | 0.01      |
-| Params size                   | 0.11      |
-| **Estimated Total Size (MB)** | **0.12**  |
-
 ### RNN Model 2 Summary
 
 | Layer (type)    | Output Shape  | Param # |
@@ -44,13 +37,6 @@ generating characters with our trained model.
 **Total params:** 49,985  
 **Trainable params:** 49,985  
 **Non-trainable params:** 0  
-
-| Metric                        | Size (MB) |
-|-------------------------------|-----------|
-| Input size                    | 0.00      |
-| Forward/backward pass size    | 0.02      |
-| Params size                   | 0.19      |
-| **Estimated Total Size (MB)** | **0.21**  |
 
 ### LSTM Model 1 Summary
 
@@ -63,13 +49,6 @@ generating characters with our trained model.
 **Trainable params:** 108,225  
 **Non-trainable params:** 0  
 
-| Metric                        | Size (MB) |
-|-------------------------------|-----------|
-| Input size                    | 0.00      |
-| Forward/backward pass size    | 0.01      |
-| Params size                   | 0.41      |
-| **Estimated Total Size (MB)** | **0.43**  |
-
 ### LSTM Model 2 Summary
 
 | Layer (type)    | Output Shape  | Param # |
@@ -81,12 +60,6 @@ generating characters with our trained model.
 **Trainable params:** 279,873  
 **Non-trainable params:** 0  
 
-| Metric                        | Size (MB) |
-|-------------------------------|-----------|
-| Input size                    | 0.00      |
-| Forward/backward pass size    | 0.02      |
-| Params size                   | 1.07      |
-| **Estimated Total Size (MB)** | **1.09**  |
 
 ## Experiments
 ### Hyperparameter
@@ -96,7 +69,6 @@ generating characters with our trained model.
 - Optimizer : AdamW
 - Learning rate : 0.002
 - Criterion = Cross Entropy Loss
-
 
 ### Average loss plot
 - Average loss plot the average loss values for training and validation comparing RNN and LSTM
