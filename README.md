@@ -72,6 +72,15 @@ generating characters with our trained model.
 
 ### Average loss plot
 - Average loss plot the average loss values for training and validation comparing RNN and LSTM
+### Model RNN 1 & LSTM 1
+<img src="./plot_images/no_aug_normal_opt_epochs_15/LeNet5_train_accuracy.png" width="650" height="300" alt="LeNet-5 Training Accuracy">
+- 내용
+- 내용
+
+### Model RNN 2 & LSTM 2
+<img src="./plot_images/no_aug_normal_opt_epochs_15/LeNet5_train_accuracy.png" width="650" height="300" alt="LeNet-5 Training Accuracy">
+- 내용
+- 내용
 
 ### Generation Performance Analysis Report
 - We need to provide at least 100 pieces of length of 5 different samples generated based on different seed characters.
