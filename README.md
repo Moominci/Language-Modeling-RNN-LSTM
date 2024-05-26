@@ -73,12 +73,13 @@ generating characters with our trained model.
 ### Average loss plot
 - Average loss plot the average loss values for training and validation comparing RNN and LSTM
 ### Model RNN 1 & LSTM 1
-<img src="./plot_images/no_aug_normal_opt_epochs_15/LeNet5_train_accuracy.png" width="650" height="300" alt="LeNet-5 Training Accuracy">
+<img src="./images/loss_plot.jpg" width="650" height="300" alt="Model 1 Average loss plot">
 - 내용
 - 내용
 
+
 ### Model RNN 2 & LSTM 2
-<img src="./plot_images/no_aug_normal_opt_epochs_15/LeNet5_train_accuracy.png" width="650" height="300" alt="LeNet-5 Training Accuracy">
+<img src="./images/loss_plot_bina.jpg" width="650" height="300" alt="Model 2 Average loss plot">
 - 내용
 - 내용
 
