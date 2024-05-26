@@ -92,3 +92,9 @@ generating characters with our trained model.
 - We need to provide at least 100 pieces of length of 5 different samples generated based on different seed characters.
 - We experimented with generating 200 words to see and evaluate more generation results.
 
+### Experiments with Parameter T
+- We Try different temperatures when you generate characters, and discuss what difference the temperature makes and why it helps to generate more plausible results.
+
+### Generation Results
+#### RNN & LSTM Generation with T = 1.0
+
