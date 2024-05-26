@@ -4,7 +4,7 @@ import torch.nn as nn
 from torch.utils.data import DataLoader, random_split, SubsetRandomSampler
 from tqdm import tqdm
 from dataset import ShakespeareDataset
-from model import CharRNN, CharLSTM
+from model2 import CharRNN, CharLSTM
 import matplotlib.pyplot as plt
 
 def train(model, trn_loader, device, criterion, optimizer, is_lstm=False):
@@ -73,10 +73,10 @@ def main():
     model_lstm = CharLSTM(input_size, hidden_size, output_size, num_layers).to(device)
     
     criterion = nn.CrossEntropyLoss()
-    optimizer_rnn = optim.Adam(model_rnn.parameters(), lr=0.002)
-    optimizer_lstm = optim.Adam(model_lstm.parameters(), lr=0.002)
+    optimizer_rnn = optim.AdamW(model_rnn.parameters(), lr=0.002)
+    optimizer_lstm = optim.AdamW(model_lstm.parameters(), lr=0.002)
 
-    num_epochs = 20
+    num_epochs = 10
     rnn_trn_losses, rnn_val_losses = [], []
     lstm_trn_losses, lstm_val_losses = [], []
 

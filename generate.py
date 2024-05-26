@@ -1,7 +1,7 @@
 import torch
 from tqdm import tqdm
 
-def generate(model, seed_characters, temperature, char_to_idx, idx_to_char, device, length=100, is_lstm=False):
+def generate(model, seed_characters, temperature, char_to_idx, idx_to_char, device, length, is_lstm=False):
     model.eval()
     input_seq = torch.tensor([char_to_idx[ch] for ch in seed_characters], dtype=torch.long).unsqueeze(0).to(device)
     hidden = model.init_hidden(1)
@@ -32,7 +32,7 @@ def generate(model, seed_characters, temperature, char_to_idx, idx_to_char, devi
     return samples
 
 if __name__ == '__main__':
-    from model import CharRNN, CharLSTM
+    from model2 import CharRNN, CharLSTM
     from dataset import ShakespeareDataset
     import torch
 
@@ -47,8 +47,8 @@ if __name__ == '__main__':
     num_layers = 2
 
     seed_chars_list = ["PANDARUS", "BUCKINGHAM", "GLOUCESTER", "KING LEAR", "VIOLA"]
-    temperature = 1.0
-    length = 100
+    temperature = 0.5
+    length = 200
 
     print("RNN Generating...")
     # RNN 모델 사용
@@ -59,7 +59,7 @@ if __name__ == '__main__':
     # 5개의 RNN 샘플 생성
     for i, seed_chars in enumerate(seed_chars_list):
         generated_text_rnn = generate(model_rnn, seed_chars, temperature, char_to_idx, idx_to_char, device, length, is_lstm=False)
-        with open(f'generated_text_rnn_sample_{i+1}.txt', 'w') as f:
+        with open(f'generated_text_rnn_sample_t.5{i+1}.txt', 'w') as f:
             # f.write("seed_character : " + seed_chars)
             f.write(generated_text_rnn)
 
@@ -72,6 +72,6 @@ if __name__ == '__main__':
     # 5개의 LSTM 샘플 생성
     for i, seed_chars in enumerate(seed_chars_list):
         generated_text_lstm = generate(model_lstm, seed_chars, temperature, char_to_idx, idx_to_char, device, length, is_lstm=True)
-        with open(f'generated_text_lstm_sample_{i+1}.txt', 'w') as f:
+        with open(f'generated_text_lstm_sample_t.5{i+1}.txt', 'w') as f:
             # f.write("seed_character : " + seed_chars)            
             f.write(generated_text_lstm)
