@@ -90,4 +90,5 @@ generating characters with our trained model.
 
 ### Generation Performance Analysis Report
 - We need to provide at least 100 pieces of length of 5 different samples generated based on different seed characters.
+- We experimented with generating 200 words to see and evaluate more generation results.
 
