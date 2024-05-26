@@ -74,14 +74,16 @@ generating characters with our trained model.
 - Average loss plot the average loss values for training and validation comparing RNN and LSTM
 ### Model RNN 1 & LSTM 1
 <img src="./images/loss_plot.jpg" width="650" height="300" alt="Model 1 Average loss plot">
-- 내용
-- 내용
+- Analysis Model Performance
+  - The RNN & LSTM model's training loss decreases steadily over the epochs, indicating that the model is learning from the training data.
+  - The validation loss also decreases initially but The LSTM model's validation loss decreases more significantly and consistently compared to the RNN model, and it achieves lower validation loss values overall.
 
 
 ### Model RNN 2 & LSTM 2
 <img src="./images/loss_plot_bina.jpg" width="650" height="300" alt="Model 2 Average loss plot">
-- 내용
-- 내용
+- Analysis Model Performance
+  - It is similar to the experimental results of Model 1.
+  - Certainly, we can see that the attempt to improve the model performance (dropout, more layers) reduced the model learning loss.
 
 ### Generation Performance Analysis Report
 - We need to provide at least 100 pieces of length of 5 different samples generated based on different seed characters.
