@@ -52,7 +52,6 @@ generating characters with our trained model.
 | Params size                   | 0.19      |
 | **Estimated Total Size (MB)** | **0.21**  |
 
-
 ### LSTM Model 1 Summary
 
 | Layer (type)    | Output Shape  | Param # |
@@ -89,10 +88,17 @@ generating characters with our trained model.
 | Params size                   | 1.07      |
 | **Estimated Total Size (MB)** | **1.09**  |
 
+## Experiments
+### Hyperparameter
+- Epochs = 20
+- Batch size : 64
+- hidden_size = 128
+- Optimizer : AdamW
+- Learning rate : 0.002
+- Criterion = Cross Entropy Loss
 
-
-
-
+### Performance Analysis Report
+- We need to provide at least 100 pieces of length of 5 different samples generated based on different seed characters.
 
 ## Softmax Function
 - Softmax function with a temperature parameter T can be written as: 
