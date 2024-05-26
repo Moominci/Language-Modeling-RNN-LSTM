@@ -93,8 +93,41 @@ generating characters with our trained model.
 - We experimented with generating 200 words to see and evaluate more generation results.
 
 ### Analysis of the Role and Impact of the Temperature Parameter 'T'
-- The temperature parameter 'T' is used in the softmax function as follows: 
-- y_i = \frac{\exp(z_i / T)}{\sum{\exp(z_i / T)}} 
+
+#### Formula
+The temperature parameter 'T' is used in the softmax function as follows:
+
+\[ y_i = \frac{\exp(z_i / T)}{\sum{\exp(z_i / T)}} \]
+
+#### Role of Temperature
+The temperature parameter 'T' is used to control the uncertainty during the sampling process of the model's output. Depending on the value of 'T', the randomness in the sampling process changes, significantly affecting the diversity and consistency of the generated text.
+
+1. **High Temperature (T > 1)**
+    - **Increased Randomness**: A high 'T' value flattens the probability distribution, giving relatively high probabilities to less certain options. This increases the diversity of the generated text but can result in semantically inconsistent outputs.
+    - **Example**: When 'T' is set to 2, the generated text can be highly diverse but may include grammatical errors or nonsensical sentences.
+
+2. **Low Temperature (0 < T < 1)**
+    - **Decreased Randomness**: A low 'T' value sharpens the probability distribution, concentrating high probabilities on the most certain options. This increases the consistency of the generated text but reduces diversity.
+    - **Example**: When 'T' is set to 0.5, the generated text is more grammatically correct and consistent but may appear somewhat monotonous.
+
+3. **Temperature = 1**
+    - **Baseline**: When 'T' is 1, the softmax function uses the original logit outputs to calculate probabilities. This results in sampling that follows the default probability distribution.
+    - **Example**: When 'T' is 1, the generated text reflects the learned patterns of the model adequately, balancing randomness and consistency.
+
+#### Impact of Temperature on Generated Results
+Adjusting the temperature parameter 'T' yields different outcomes:
+
+1. **Diversity**
+    - A high 'T' value increases the likelihood of generating diverse words and sentences. This is useful for experimental or creative text generation.
+    - A low 'T' value results in more predictable and consistent text. This is beneficial for practical or precise text generation.
+
+2. **Consistency**
+    - A high 'T' value can reduce the consistency of sentences, often leading to illogical or grammatically incorrect sentences.
+    - A low 'T' value enhances sentence consistency, producing more natural text.
+
+#### Conclusion
+The temperature parameter 'T' greatly influences the quality of the generated text. A high 'T' value produces more creative and diverse text, while a low 'T' value generates more consistent and logical text. Therefore, users should choose an appropriate 'T' value based on the purpose of the generated text. Experimenting with different 'T' values is essential to find the optimal setting for achieving natural and satisfying results.
+
 ​
 
 
