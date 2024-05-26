@@ -105,14 +105,20 @@ The temperature parameter 'T' is used to control the uncertainty during the samp
 1. **High Temperature (T > 1)**
     - **Increased Randomness**: A high 'T' value flattens the probability distribution, giving relatively high probabilities to less certain options. This increases the diversity of the generated text but can result in semantically inconsistent outputs.
     - **Example**: When 'T' is set to 2, the generated text can be highly diverse but may include grammatical errors or nonsensical sentences.
+    - **RNN Example**: BUCKINGHAMENCERE: na,--fulthip ands! A oppuever: obeen! all. With that!--The noblos; Pain litted of Mardtim.'
+    - **LSTM Example**: BUCKINGHAM: True? it so't,Where earth, kell doer griand;I will dof, ungeasy, as yiedHonder nned the swrackme,'En lougmment, thus yo't?
 
 2. **Low Temperature (0 < T < 1)**
     - **Decreased Randomness**: A low 'T' value sharpens the probability distribution, concentrating high probabilities on the most certain options. This increases the consistency of the generated text but reduces diversity.
     - **Example**: When 'T' is set to 0.5, the generated text is more grammatically correct and consistent but may appear somewhat monotonous.
+    - **RNN Example**: BUCKINGHAM: What should not of the fair face the hands, he will not that say the senaten day were be a bear his words And cloubs, with him the state the matter to make the one me that thy lives
+    - **LSTM Example**: BUCKINGHAM: And, in good time, here by meine and the devil in thy peril, Her comfort of that world thing is merce that had eleven for you, lay of months
 
 3. **Temperature = 1**
     - **Baseline**: When 'T' is 1, the softmax function uses the original logit outputs to calculate probabilities. This results in sampling that follows the default probability distribution.
     - **Example**: When 'T' is 1, the generated text reflects the learned patterns of the model adequately, balancing randomness and consistency.
+    - **RNN Example**: BUCKINGHAM: MARCIUS: Cate well. Being state, if they was the tribunes, I as well recoot'st to spetuce knows, The uther eye you, have but the earth The witnes, 
+    - **LSTM Example**: BUCKINGHAM:Well, and is cereating to hers! Henr set shall pleased as we king That having abhold to bright hate of these breath What scorn to't to come is enhor
 
 #### Impact of Temperature on Generated Results
 Adjusting the temperature parameter 'T' yields different outcomes:
