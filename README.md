@@ -10,6 +10,7 @@ generating characters with our trained model.
 
 # Assignment Reports
 ## **To run python files, please place the models in the "Models" folder in the same folder as the python file.
+## ** The difference between ~~.py and ~~_drop.py is the difference between using a regular model and one with Dropout.
 ## Model Architecture Overview
 - We used 2 vanilla RNN models and two LSTM models to compare model performance and conduct comparative experiments to see if applying performance enhancement techniques really worked.
 - The structural differences between the first RNN, LSTM model and the second RNN, LSTM model are as follows.
